@@ -1,0 +1,138 @@
+/* 
+ project name  ===> particles-js
+ Design by    ===> Abobaker hilal
+ start test   ===> 23/8/2020
+ main color   ===> #fff
+ main backgroundColor   ===> #1f2023
+
+*/
+
+/*  start general setting */
+
+
+@font-face {
+  src: url("../font/OpenSans-Regular.ttf");
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+  color: #fff;
+}
+
+a,a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*  end general setting */
+
+/*  start particles-js*/
+.particles {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+  text-align: center;
+  width: 50%;
+
+}
+
+.title-particles {
+  text-transform: capitalize;
+  font-size: 2rem;
+  margin: 30px 0;
+}
+
+.date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Days,
+.Hours,
+.Minutes,
+.Seconds {
+  font-family: 'Roboto';
+  font-size: 3rem;
+}
+
+#particles-js {
+  height: 100%;
+  width: 100%;
+  z-index: 98;
+  background-color: #1f2023;
+}
+
+#changeColor-js {
+ background-color: transparent;
+ border: 0;
+ cursor: pointer;
+}
+
+#changeColor-js:focus ,
+#changeColor-js:active ,
+#changeColor-js:hover {
+  border: 0 !important;
+  outline: none;
+}
+
+.copy-right {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+
+
+@media(max-width:575px) {
+  .content{
+    width: 100%;
+    padding: 0 15px;
+    top: 20%;
+  }
+  .title-particles {
+    font-size: 1rem;
+  }
+  .copy-right{
+    flex-direction: column;
+  }
+  .change-color{
+    margin-bottom: 20px;
+  }
+}
+/*  end particles-js  */
